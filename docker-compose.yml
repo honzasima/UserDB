@@ -19,6 +19,7 @@ services:
       - "80:80"
     volumes:
       - .:/opt/userdb
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     links:
       - db
     network_mode: "bridge"
@@ -26,6 +27,8 @@ services:
     image: phpmyadmin/phpmyadmin
     ports:
       - "8080:80"
+    volumes:
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     links:
       - db
     environment:

@@ -29,7 +29,8 @@
 		"pauluswebster/shutterstock-rickshaw": "dev-master",
 		"kdyby/console": "~2.7.1",
 		"defuse/php-encryption": "~2.2.1",
-		"ext-json": "*"
+		"ext-json": "*",
+		"firebase/php-jwt": "^5.0"
         },
 	"require-dev": {
 		"nette/tester": "~1.0"
